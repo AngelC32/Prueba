@@ -1,4 +1,11 @@
 # Ant
+- task: Ant@1
+  inputs:
+    buildFile: 'build.xml'
+    options: 
+    publishJUnitResults: true
+    testResultsFiles: '**/TEST-*.xml'
+    javaHomeOption: 'JDKVersion'
 # Build your Java projects and run tests with Apache Ant.
 # Add steps that save build artifacts and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
